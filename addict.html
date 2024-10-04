@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addiction Awareness Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .jumbotron {
+            background-color: #007bff;
+            color: white;
+        }
+        .animation-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px; /* Adjusted for better scrolling */
+            margin: 20px 0;
+        }
+        .character {
+            width: 50px;
+            height: 50px;
+            background-color: #ff4757; /* Color representing struggle */
+            border-radius: 50%;
+            position: relative;
+            animation: shake 1s infinite;
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+    <h1>Addiction Awareness Blog</h1>
+    <p>Understanding addiction and supporting recovery</p>
+</div>
+
+<div class="container">
+    <h2>Animation on Drug Addiction</h2>
+    <div class="animation-container">
+        <div class="character"></div>
+    </div>
+
+    <h2>Recent Posts</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="gaming-addiction.jpg" class="card-img-top" alt="Gaming Addiction">
+                <div class="card-body">
+                    <h5 class="card-title">Gaming Addiction</h5>
+                    <p class="card-text">Exploring the impact of excessive gaming on mental health and daily life.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="drug-addiction.jpg" class="card-img-top" alt="Drug Addiction">
+                <div class="card-body">
+                    <h5 class="card-title">Drug Addiction</h5>
+                    <p class="card-text">Understanding the causes, effects, and recovery paths for drug addiction.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="alcohol-addiction.jpg" class="card-img-top" alt="Alcohol Addiction">
+                <div class="card-body">
+                    <h5 class="card-title">Alcohol Addiction</h5>
+                    <p class="card-text">Discussing the effects of alcohol dependency and resources for recovery.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>About</h2>
+    <p>This blog aims to raise awareness about different types of addiction, share stories of recovery, and provide resources for those affected.</p>
+
+    <hr>
+
+    <h2>Contact</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 Addiction Awareness Blog</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
