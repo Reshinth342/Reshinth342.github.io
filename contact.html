@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Directory & Story Sharing | HopeRecovery</title>
+    <meta name="description" content="Verified global support directory, SAMHSA 24/7 helpline details, non-judgmental assistance, and community recovery story submission.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="helpline-banner">
+        <span>🆘 Need Urgent Help or Someone to Talk To? 24/7 Free & Confidential Support</span>
+        <a href="tel:18006624357" class="helpline-btn">📞 Call 1-800-662-4357 (SAMHSA)</a>
+    </div>
+
+    <nav class="navbar-custom">
+        <div class="container nav-container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-icon">🌱</span>
+                <span>HopeRecovery</span>
+            </a>
+            <button class="mobile-nav-toggle" id="mobileNavToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item-dropdown">
+                    <span class="nav-link">Addictions ▼</span>
+                    <div class="dropdown-menu-custom" id="addictionsDropdownMenu"></div>
+                </li>
+                <li><a class="nav-link" href="understanding-addiction.html">Understanding Addiction</a></li>
+                <li><a class="nav-link" href="recovery.html">Recovery</a></li>
+                <li><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item-dropdown">
+                    <span class="nav-link">Interactive Tools ▼</span>
+                    <div class="dropdown-menu-custom">
+                        <a href="tools/self-reflection.html" class="dropdown-item-custom"><span>📋</span> Self-Reflection Tool</a>
+                        <a href="tools/trigger-tracker.html" class="dropdown-item-custom"><span>⚡</span> Trigger Tracker</a>
+                        <a href="tools/craving-tracker.html" class="dropdown-item-custom"><span>📈</span> Craving Log</a>
+                        <a href="tools/recovery-journal.html" class="dropdown-item-custom"><span>📖</span> Recovery Journal</a>
+                    </div>
+                </li>
+                <li><a class="nav-link" href="music.html">Music & Recovery</a></li>
+                <li><a class="nav-link active" href="contact.html">Support</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="search-trigger-btn" id="globalSearchTrigger">🔍 <span>Search...</span></button>
+                <button class="theme-toggle-btn" id="themeToggleBtn">☀️</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-padding" style="background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.15), transparent 70%); text-align:center;">
+        <div class="container" style="max-width: 800px;">
+            <span class="card-badge" style="position:static; display:inline-block; margin-bottom:1rem;">Support Directory</span>
+            <h1>Support Directory & <span class="text-gradient">Community Stories</span></h1>
+            <p style="color: var(--text-secondary); font-size:1.15rem; margin-top:0.75rem;">Access free confidential helpline contacts, professional resources, or share your story anonymously to inspire others.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container" style="max-width: 900px;">
+            
+            <!-- Global Helplines Grid -->
+            <h2 style="margin-bottom: 1.5rem; text-align:center;">📞 Emergency & Crisis Support Directory</h2>
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-bottom:3.5rem;">
+                <div class="glass-card" style="padding:1.5rem;">
+                    <h3>SAMHSA National Helpline</h3>
+                    <p style="color:var(--text-secondary); font-size:0.9rem; margin:0.5rem 0 1rem;">Free, 24/7, 365-day treatment referral and information service (English & Spanish).</p>
+                    <a href="tel:18006624357" class="btn btn-primary" style="padding:0.4rem 1rem; font-size:0.88rem;">Call 1-800-662-4357</a>
+                </div>
+
+                <div class="glass-card" style="padding:1.5rem;">
+                    <h3>988 Suicide & Crisis Lifeline</h3>
+                    <p style="color:var(--text-secondary); font-size:0.9rem; margin:0.5rem 0 1rem;">Free, confidential emotional support available 24/7 by call or text.</p>
+                    <a href="tel:988" class="btn btn-primary" style="padding:0.4rem 1rem; font-size:0.88rem;">Call or Text 988</a>
+                </div>
+
+                <div class="glass-card" style="padding:1.5rem;">
+                    <h3>Gambling Helpline</h3>
+                    <p style="color:var(--text-secondary); font-size:0.9rem; margin:0.5rem 0 1rem;">National Problem Gambling Helpline offering confidential counseling referrals.</p>
+                    <a href="tel:18005224700" class="btn btn-primary" style="padding:0.4rem 1rem; font-size:0.88rem;">Call 1-800-522-4700</a>
+                </div>
+            </div>
+
+            <!-- Story Submission Form -->
+            <div class="custom-form contact-story-form">
+                <h3 style="margin-bottom:0.5rem; text-align:center;">Share Your Recovery Story or Inquire</h3>
+                <p style="color:var(--text-muted); text-align:center; margin-bottom:1.5rem;">You can choose to remain completely anonymous.</p>
+
+                <div class="form-group">
+                    <label for="contactName">Name / Alias:</label>
+                    <input type="text" id="contactName" class="form-control-custom" style="width:100%;" placeholder="Enter name or 'Anonymous'" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email Address (Kept Private):</label>
+                    <input type="email" id="contactEmail" class="form-control-custom" style="width:100%;" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Your Story or Message:</label>
+                    <textarea id="contactMessage" class="form-control-custom" placeholder="Type your story or message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%;">Submit Securely</button>
+            </div>
+
+            <div class="medical-disclaimer-box" style="margin-top:2.5rem;">
+                <strong>Mandatory Medical Disclaimer:</strong> Educational content only. In a life-threatening emergency, call 911 or visit your nearest emergency room immediately.
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 HopeRecovery Addiction Awareness & Education Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

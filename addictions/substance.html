@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug & Substance Addiction | HopeRecovery</title>
+    <meta name="description" content="Prescription drugs, opioids, stimulants, nicotine, harm reduction, tolerance mechanics, and evidence-based treatment.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="helpline-banner">
+        <span>🆘 Need Urgent Help or Someone to Talk To? 24/7 Free & Confidential Support</span>
+        <a href="tel:18006624357" class="helpline-btn">📞 Call 1-800-662-4357 (SAMHSA)</a>
+    </div>
+
+    <nav class="navbar-custom">
+        <div class="container nav-container">
+            <a class="navbar-brand" href="../index.html">
+                <span class="brand-icon">🌱</span>
+                <span>HopeRecovery</span>
+            </a>
+            <button class="mobile-nav-toggle" id="mobileNavToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item-dropdown">
+                    <span class="nav-link active">Addictions ▼</span>
+                    <div class="dropdown-menu-custom" id="addictionsDropdownMenu"></div>
+                </li>
+                <li><a class="nav-link" href="../understanding-addiction.html">Understanding Addiction</a></li>
+                <li><a class="nav-link" href="../recovery.html">Recovery</a></li>
+                <li><a class="nav-link" href="../blog.html">Blog</a></li>
+                <li class="nav-item-dropdown">
+                    <span class="nav-link">Interactive Tools ▼</span>
+                    <div class="dropdown-menu-custom">
+                        <a href="../tools/self-reflection.html" class="dropdown-item-custom"><span>📋</span> Self-Reflection Tool</a>
+                        <a href="../tools/trigger-tracker.html" class="dropdown-item-custom"><span>⚡</span> Trigger Tracker</a>
+                        <a href="../tools/craving-tracker.html" class="dropdown-item-custom"><span>📈</span> Craving Log</a>
+                        <a href="../tools/recovery-journal.html" class="dropdown-item-custom"><span>📖</span> Recovery Journal</a>
+                    </div>
+                </li>
+                <li><a class="nav-link" href="../music.html">Music & Recovery</a></li>
+                <li><a class="nav-link" href="../contact.html">Support</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="search-trigger-btn" id="globalSearchTrigger">🔍 <span>Search...</span></button>
+                <button class="theme-toggle-btn" id="themeToggleBtn">☀️</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-padding" style="background: radial-gradient(circle at 50% 20%, rgba(20, 184, 166, 0.15), transparent 70%);">
+        <div class="container">
+            <div class="hero-grid">
+                <div>
+                    <span class="card-badge" style="position:static; display:inline-block; margin-bottom:1rem; color:var(--teal);">Substance Category</span>
+                    <h1>💊 Drug & Substance Addiction</h1>
+                    <p style="font-size:1.15rem; color:var(--text-secondary); margin-top:0.75rem;">Understanding chemical dependency, opioids, prescription medications, stimulants, harm reduction, and clinical treatment pathways.</p>
+                    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.5rem;">
+                        <a href="#video-guide" class="btn btn-primary">📺 Watch Verified Video Guide</a>
+                        <a href="#grounding-exercise" class="btn btn-outline">⏱️ 3-Min Urge Surfing</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="../images/drug.png" alt="Substance Addiction Visualizer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container" style="max-width: 950px;">
+            
+            <div class="glass-card" style="padding: 2rem; margin-bottom: 2.5rem;">
+                <h2>🧠 Neurobiology of Substance Dependency</h2>
+                <p style="color: var(--text-secondary); margin-top:0.75rem;">Substances interact directly with endogenous opioid receptors, dopamine transporters, or serotonin pathways. High chemical flooding causes rapid down-regulation of brain receptors, leading to severe tolerance, physiological dependency, and intense post-acute withdrawal symptoms (PAWS).</p>
+            </div>
+
+            <h3 style="margin-bottom: 1.25rem;">📊 4 Stages of Substance Use Progression</h3>
+            <div class="stepper-container">
+                <div class="stepper-card">
+                    <div class="stepper-num">1</div>
+                    <h4>Prescription / Initial Use</h4>
+                    <p style="font-size:0.88rem; color:var(--text-secondary);">Using medication for pain or recreation out of curiosity.</p>
+                </div>
+                <div class="stepper-card">
+                    <div class="stepper-num">2</div>
+                    <h4>Increased Tolerance</h4>
+                    <p style="font-size:0.88rem; color:var(--text-secondary);">Requiring higher doses to achieve baseline pain or mood relief.</p>
+                </div>
+                <div class="stepper-card">
+                    <div class="stepper-num">3</div>
+                    <h4>Compulsive Seeking</h4>
+                    <p style="font-size:0.88rem; color:var(--text-secondary);">Doctor shopping or acquiring substances outside prescribed channels.</p>
+                </div>
+                <div class="stepper-card">
+                    <div class="stepper-num">4</div>
+                    <h4>Physical Dependency</h4>
+                    <p style="font-size:0.88rem; color:var(--text-secondary);">Using continuously to avoid acute physical withdrawal illness.</p>
+                </div>
+            </div>
+
+            <div class="checklist-card">
+                <h3>📋 Interactive Substance Warning Signs Checklist</h3>
+                <div class="checklist-item">
+                    <input type="checkbox" id="sub_chk1">
+                    <label for="sub_chk1">Taking prescription medication in higher doses or for longer than prescribed.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="sub_chk2">
+                    <label for="sub_chk2">Experiencing physical withdrawal symptoms (body aches, chills, nausea, sweating) when doses wear off.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="sub_chk3">
+                    <label for="sub_chk3">Engaging in risky behaviors or spending excessive time obtaining substances.</label>
+                </div>
+            </div>
+
+            <div class="info-box warning">
+                <h4>🚨 Crisis Safety & Harm Reduction</h4>
+                <p style="color: var(--text-secondary);">Harm reduction saves lives. Carrying Naloxone (Narcan)—a life-saving overdose reversal nasal spray—and never using alone are vital safety measures. In an emergency, call 911 immediately. Good Samaritan laws protect individuals seeking help.</p>
+            </div>
+
+            <div id="grounding-exercise" class="grounding-box">
+                <h3>⏱️ Interactive 3-Minute Urge Surfing Tool</h3>
+                <p style="color:var(--text-secondary); font-size:0.95rem;">Feeling an acute craving surge? Cravings naturally peak and subside within 3 minutes when you redirect your nervous system.</p>
+                
+                <div class="timer-readout" id="groundingTimerReadout">3:00</div>
+                <p id="groundingStatusMsg" style="font-size:0.9rem; color:var(--teal); margin-bottom:1rem;">Click below to start deep breathing exercise...</p>
+                <button id="startGroundingTimerBtn" class="btn btn-primary">▶️ Start 3-Minute Grounding</button>
+            </div>
+
+            <!-- Verified Working YouTube Video Embed -->
+            <div id="video-guide" class="glass-card" style="padding: 2rem; margin-top: 3rem; border-color: var(--teal);">
+                <span class="card-badge" style="position:static; display:inline-block; margin-bottom:0.75rem;">Verified Educational Video</span>
+                <h3>📺 Video Guide: Everything You Think You Know About Addiction is Wrong (TED)</h3>
+                <p style="color:var(--text-muted); margin-bottom:1.5rem;">Verified world-renowned TED presentation on chemical dependency, human connection, and recovery.</p>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube-nocookie.com/embed/PY9DcIMGxMs" title="Substance Addiction TED Video Guide" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">❓ Frequently Asked Questions about Substance Treatment</h3>
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <span>What is Medication-Assisted Treatment (MAT)?</span>
+                    <span>▼</span>
+                </button>
+                <div class="accordion-content">
+                    <p>MAT combines FDA-approved medications (like Buprenorphine or Naltrexone) with behavioral therapy to normalize brain chemistry, block euphoric effects, and relieve physiological cravings.</p>
+                </div>
+            </div>
+
+            <div class="medical-disclaimer-box">
+                <strong>Mandatory Medical Disclaimer:</strong> Educational content only. For medical support, contact SAMHSA at 1-800-662-4357.
+            </div>
+
+            <div style="margin-top: 3rem; text-align: center;">
+                <a href="../index.html" class="btn btn-outline">← Back to Homepage</a>
+                <a href="../tools/trigger-tracker.html" class="btn btn-primary">Explore Trigger Library →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 HopeRecovery Addiction Awareness & Education Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopeRecovery — Addiction Awareness, Science & Recovery Platform</title>
+    <meta name="description" content="Evidence-based education, interactive tools, psychology of compulsive behavior, cravings, triggers, and recovery support.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- 24/7 Emergency Helpline Banner -->
+    <div class="helpline-banner">
+        <span>🆘 Need Urgent Help or Someone to Talk To? 24/7 Free & Confidential Support</span>
+        <a href="tel:18006624357" class="helpline-btn">📞 Call 1-800-662-4357 (SAMHSA)</a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar-custom">
+        <div class="container nav-container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-icon">🌱</span>
+                <span>HopeRecovery</span>
+            </a>
+            <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">☰</button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link active" href="index.html">Home</a></li>
+                
+                <!-- Addictions Dropdown -->
+                <li class="nav-item-dropdown">
+                    <span class="nav-link">Addictions ▼</span>
+                    <div class="dropdown-menu-custom" id="addictionsDropdownMenu">
+                        <!-- Rendered by JS -->
+                    </div>
+                </li>
+
+                <li><a class="nav-link" href="understanding-addiction.html">Understanding Addiction</a></li>
+                <li><a class="nav-link" href="recovery.html">Recovery</a></li>
+                <li><a class="nav-link" href="blog.html">Blog</a></li>
+
+                <!-- Tools Dropdown -->
+                <li class="nav-item-dropdown">
+                    <span class="nav-link">Interactive Tools ▼</span>
+                    <div class="dropdown-menu-custom">
+                        <a href="tools/self-reflection.html" class="dropdown-item-custom"><span>📋</span> Self-Reflection Tool</a>
+                        <a href="tools/trigger-tracker.html" class="dropdown-item-custom"><span>⚡</span> Trigger Tracker</a>
+                        <a href="tools/craving-tracker.html" class="dropdown-item-custom"><span>📈</span> Craving Log</a>
+                        <a href="tools/recovery-journal.html" class="dropdown-item-custom"><span>📖</span> Recovery Journal</a>
+                    </div>
+                </li>
+
+                <li><a class="nav-link" href="music.html">Music & Recovery</a></li>
+                <li><a class="nav-link" href="contact.html">Support</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button class="search-trigger-btn" id="globalSearchTrigger">🔍 <span>Search...</span></button>
+                <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme">☀️</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="card-badge" style="position:static; display:inline-block; margin-bottom:1rem;">Evidence-Based Education</span>
+                    <h1>UNDERSTAND ADDICTION.<br><span class="text-gradient">BREAK THE CYCLE.</span><br>BUILD RECOVERY.</h1>
+                    <p>Explore addiction, compulsive behavior, triggers, cravings, recovery, and the neurobiological science behind the patterns that keep us stuck. Educating without judgment.</p>
+                    <div class="hero-actions">
+                        <a href="#categories" class="btn btn-primary">Explore Addictions</a>
+                        <a href="tools/self-reflection.html" class="btn btn-outline">Start Self-Reflection</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>12</h3>
+                            <p>Addiction Categories</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Free & Confidential</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>Support Hotline</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/hero.png" alt="Path to Hope and Healing Sunlit Landscape">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12 Addiction Categories Showcase Grid with Visual Images -->
+    <section id="categories" class="section-padding">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <span class="card-badge" style="position:static; display:inline-block; margin-bottom:0.75rem;">Educational Taxonomy</span>
+                <h2>Substance & Behavioral Addictions</h2>
+                <p style="color: var(--text-muted); max-width: 650px; margin: 0.5rem auto 0;">Deep-dive into specific addiction topics, neurobiology, warning signs, visualizers, YouTube video guides, and evidence-based recovery pathways.</p>
+            </div>
+
+            <div class="card-grid">
+                <!-- 1. Alcohol -->
+                <div class="glass-card">
+                    <div class="card-img-holder">
+                        <img src="images/alcohol.png" alt="Alcohol Addiction Recovery">
+                        <span class="card-badge">Substance</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">🍷 Alcohol Addiction</h3>
+                        <p class="card-text">Understanding physical dependence, AUD symptoms, medical withdrawal safety protocols, and long-term recovery.</p>
+                        <a href="addictions/alcohol.html" class="btn btn-outline" style="width:100%;">Explore Category & Video →</a>
+                    </div>
+                </div>
+
+                <!-- 2. Drug & Substance -->
+                <div class="glass-card">
+                    <div class="card-img-holder">
+                        <img src="images/drug.png" alt="Substance Recovery Freedom Concept">
+                        <span class="card-badge">Substance</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">💊 Drug & Substance Addiction</h3>
+                        <p class="card-text">Prescription drugs, opioids, stimulants, nicotine, tolerance mechanics, MAT, and harm reduction strategies.</p>
+                        <a href="addictions/substance.html" class="btn btn-outline" style="width:100%;">Explore Category & Video →</a>
+                    </div>
+                </div>
+
+                <!-- 3. Gaming -->
+                <div class="glass-card">
+                    <div class="card-img-holder">
+                        <img src="images/gaming.png" alt="Gaming Addiction & Digital Balance">
+                        <span class="card-badge">Behavioral</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">🎮 Gaming Addiction</h3>
+                        <p class="card-text">WHO Gaming Disorder criteria, reward loop mechanics, screen health, sleep restoration, and digital balance.</p>
+                        <a href="addictions/gaming.html" class="btn btn-outline" style="width:100%;">Explore Category & Video →</a>
+                    </div>
+                </div>
+
+                <!-- 4. Social Media -->
+                <div class="glass-card">
+                    <div class="card-img-holder">
+                        <img src="images/social-media.png" alt="Social Media Doomscrolling Balance">
+                        <span class="card-badge">Digital</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">📱 Social Media Addiction</h3>
+                        <p class="card-text">Doomscrolling, FOMO, notification loops, algorithmic reinforcement, attention fragmentation, and digital boundaries.</p>
+                        <a href="addictions/social-media.html" class="btn btn-outline" style="width:100%;">Explore Category & Video →</a>
+                    </div>
+                </div>
+
+                <!-- 5. Pornography -->
+                <div class="glass-card">
+                    <div class="card-img-holder">
+                        <img src="images/pornography.png" alt="Compulsive Content Recovery">
+                        <span class="card-badge">Behavioral</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">🔒 Pornography & Compulsive Content</h3>
+                        <p class="card-text">Understanding urge cycles, dopamine novelty, stress coping loops, relationship dynamics, and breaking repetitive cycles.</p>
+                        <a href="addictions/pornography.html" class="btn btn-outline" style="width:100%;">Explore Category & Video →</a>
+                    </div>
+                </div>
+
+                <!-- 6. Smartphone -->
+                <div class="glass-card">
+                    <div class="card-img-holder">
+                        <img src="images/smartphone.png" alt="Smartphone Digital Detox">
+                        <span class="card-badge">Digital</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">📲 Smartphone & Internet Overuse</h3>
+                        <p class="card-text">Nomophobia, constant screen checking, bedtime scrolling, attention restoration, and practical digital detox steps.</p>
+                        <a href="addictions/smartphone.html" class="btn btn-outline" style="width:100%;">Explore Category & Video →</a>
+                    </div>
+                </div>
+
+                <!-- 7. Gambling -->
+                <div class="glass-card">
+                    <div class="card-img-holder">
+                        <img src="images/gambling.png" alt="Gambling Addiction Recovery">
+                        <span class="card-badge">Impulse Control</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">🎰 Gambling Addiction</h3>
+                        <p class="card-text">Sports betting, online slots, chasing losses, reward prediction errors, debt cycles, and self-exclusion support.</p>
+                        <a href="addictions/gambling.html" class="btn btn-outline" style="width:100%;">Explore Category & Video →</a>
+                    </div>
+                </div>
+
+                <!-- 8. Shopping -->
+                <div class="glass-card">
+                    <div class="card-img-holder">
+                        <img src="images/shopping.png" alt="Compulsive Shopping Recovery">
+                        <span class="card-badge">Behavioral</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">🛍️ Shopping & Spending Addiction</h3>
+                        <p class="card-text">Compulsive spending, impulse purchases, buy-now-pay-later cycles, emotional shopping, and financial recovery.</p>
+                        <a href="addictions/shopping.html" class="btn btn-outline" style="width:100%;">Explore Category & Video →</a>
+                    </div>
+                </div>
+
+                <!-- 9. Food -->
+                <div class="glass-card">
+                    <div class="card-img-holder">
+                        <img src="images/food.png" alt="Compulsive Eating Behaviors">
+                        <span class="card-badge">Health</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">🥑 Compulsive Eating Behaviors</h3>
+                        <p class="card-text">Emotional eating, food cravings, hedonic hunger, stress eating patterns, and building healthy reward relationships.</p>
+                        <a href="addictions/food.html" class="btn btn-outline" style="width:100%;">Explore Category & Video →</a>
+                    </div>
+                </div>
+
+                <!-- 10. Work -->
+                <div class="glass-card">
+                    <div class="card-img-holder">
+                        <img src="images/work.png" alt="Workaholism and Burnout">
+                        <span class="card-badge">Behavioral</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">💼 Work Addiction (Workaholism)</h3>
+                        <p class="card-text">Compulsive productivity, guilt during rest, inability to disconnect, burnout cycles, and setting healthier boundaries.</p>
+                        <a href="addictions/work.html" class="btn btn-outline" style="width:100%;">Explore Category & Video →</a>
+                    </div>
+                </div>
+
+                <!-- 11. Exercise -->
+                <div class="glass-card">
+                    <div class="card-img-holder">
+                        <img src="images/exercise.png" alt="Exercise Addiction Recovery">
+                        <span class="card-badge">Health</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">🏋️ Compulsive Exercise Addiction</h3>
+                        <p class="card-text">Compulsive workouts, exercising through injury, workout guilt, over-training syndrome, and balanced movement.</p>
+                        <a href="addictions/exercise.html" class="btn btn-outline" style="width:100%;">Explore Category & Video →</a>
+                    </div>
+                </div>
+
+                <!-- 12. Relationship -->
+                <div class="glass-card">
+                    <div class="card-img-holder">
+                        <img src="images/relationship.png" alt="Relationship & Love Attachment">
+                        <span class="card-badge">Relational</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">❤️ Relationship & Love Addiction</h3>
+                        <p class="card-text">Romantic validation dependence, fear of solitude, repetitive unhealthy attachment loops, and emotional independence.</p>
+                        <a href="addictions/relationship.html" class="btn btn-outline" style="width:100%;">Explore Category & Video →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Addiction Cycle Visualizer Section -->
+    <section class="section-padding" style="background: var(--bg-surface);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <span class="card-badge" style="position:static; display:inline-block; margin-bottom:0.75rem;">Interactive Diagram</span>
+                <h2>The 6-Step Addiction Cycle Visualizer</h2>
+                <p style="color: var(--text-muted); max-width: 650px; margin: 0.5rem auto 0;">Explore how triggers, urges, behaviors, temporary rewards, consequences, and reinforcement interact in real-world addiction patterns.</p>
+            </div>
+
+            <div class="cycle-visualizer-container">
+                <div class="cycle-nav-pills" id="cyclePillsNav">
+                    <button class="cycle-pill-btn active" data-key="alcohol">🍷 Alcohol</button>
+                    <button class="cycle-pill-btn" data-key="gaming">🎮 Gaming</button>
+                    <button class="cycle-pill-btn" data-key="socialMedia">📱 Social Media</button>
+                    <button class="cycle-pill-btn" data-key="gambling">🎰 Gambling</button>
+                    <button class="cycle-pill-btn" data-key="substance">💊 Substances</button>
+                    <button class="cycle-pill-btn" data-key="pornography">🔒 Pornography</button>
+                    <button class="cycle-pill-btn" data-key="shopping">🛍️ Shopping</button>
+                </div>
+
+                <div id="cycleVisualizerContent">
+                    <!-- Rendered by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Recovery Tools Spotlight -->
+    <section class="section-padding">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <span class="card-badge" style="position:static; display:inline-block; margin-bottom:0.75rem;">Interactive Toolkit</span>
+                <h2>Self-Reflection & Recovery Tools</h2>
+                <p style="color: var(--text-muted);">Empowering self-reflection, craving logging, trigger tracking, and private journal reflections.</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="glass-card">
+                    <div class="card-body">
+                        <div style="font-size:2.2rem; margin-bottom:0.5rem;">📋</div>
+                        <h3 class="card-title">Addiction Self-Reflection</h3>
+                        <p class="card-text">A non-diagnostic 9-question reflection tool to evaluate warning signs across behaviors with confidential scoring tiers.</p>
+                        <a href="tools/self-reflection.html" class="btn btn-primary" style="width:100%;">Start Self-Reflection →</a>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-body">
+                        <div style="font-size:2.2rem; margin-bottom:0.5rem;">⚡</div>
+                        <h3 class="card-title">Trigger Tracker & Library</h3>
+                        <p class="card-text">Explore 14 common triggers (stress, boredom, notifications) and access step-by-step healthy coping response plans.</p>
+                        <a href="tools/trigger-tracker.html" class="btn btn-primary" style="width:100%;">Explore Triggers →</a>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-body">
+                        <div style="font-size:2.2rem; margin-bottom:0.5rem;">📈</div>
+                        <h3 class="card-title">Interactive Craving Log</h3>
+                        <p class="card-text">Log craving intensity (1–10), triggers, and outcomes to visualize weekly intensity trend bar charts.</p>
+                        <a href="tools/craving-tracker.html" class="btn btn-primary" style="width:100%;">Log Craving →</a>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-body">
+                        <div style="font-size:2.2rem; margin-bottom:0.5rem;">📖</div>
+                        <h3 class="card-title">Private Recovery Journal</h3>
+                        <p class="card-text">A secure, local-storage daily reflection journal to log daily moods, replacement actions, and personal victories.</p>
+                        <a href="tools/recovery-journal.html" class="btn btn-primary" style="width:100%;">Open Journal →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mandatory Medical Disclaimer Box -->
+    <div class="container">
+        <div class="medical-disclaimer-box">
+            <strong>Mandatory Medical Disclaimer:</strong> This website provides educational and informational content about addiction, compulsive behavior, and recovery. It is not a substitute for professional medical, psychological, or addiction treatment. Self-reflection tools are for personal education only and do not provide a clinical diagnosis. If you or someone you know is struggling with substance use or compulsive behaviors, please consult a qualified healthcare or addiction professional.
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a class="navbar-brand" href="index.html" style="margin-bottom:1rem; display:inline-flex;">
+                        <span class="brand-icon">🌱</span>
+                        <span>HopeRecovery</span>
+                    </a>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Dedicated to providing accessible, evidence-based addiction education, interactive recovery tools, and non-judgmental support.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="addictions/alcohol.html">Alcohol Addiction</a></li>
+                        <li><a href="addictions/substance.html">Substance Addiction</a></li>
+                        <li><a href="addictions/gaming.html">Gaming Addiction</a></li>
+                        <li><a href="addictions/social-media.html">Social Media Addiction</a></li>
+                        <li><a href="addictions/gambling.html">Gambling Addiction</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Interactive Tools</h4>
+                    <ul>
+                        <li><a href="tools/self-reflection.html">Self-Reflection Tool</a></li>
+                        <li><a href="tools/trigger-tracker.html">Trigger Tracker</a></li>
+                        <li><a href="tools/craving-tracker.html">Craving Log</a></li>
+                        <li><a href="tools/recovery-journal.html">Recovery Journal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Emergency Helpline</h4>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem;">SAMHSA Free National Helpline:</p>
+                    <a href="tel:18006624357" style="color: var(--teal); font-weight:700;">📞 1-800-662-4357</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HopeRecovery Addiction Awareness & Education Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Craving Log & Visual Trends | HopeRecovery</title>
+    <meta name="description" content="Record craving intensity (1-10), triggers, and outcomes to visualize weekly intensity trend bar charts.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="helpline-banner">
+        <span>🆘 Need Urgent Help or Someone to Talk To? 24/7 Free & Confidential Support</span>
+        <a href="tel:18006624357" class="helpline-btn">📞 Call 1-800-662-4357 (SAMHSA)</a>
+    </div>
+
+    <nav class="navbar-custom">
+        <div class="container nav-container">
+            <a class="navbar-brand" href="../index.html">
+                <span class="brand-icon">🌱</span>
+                <span>HopeRecovery</span>
+            </a>
+            <button class="mobile-nav-toggle" id="mobileNavToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item-dropdown">
+                    <span class="nav-link">Addictions ▼</span>
+                    <div class="dropdown-menu-custom" id="addictionsDropdownMenu"></div>
+                </li>
+                <li><a class="nav-link" href="../understanding-addiction.html">Understanding Addiction</a></li>
+                <li><a class="nav-link" href="../recovery.html">Recovery</a></li>
+                <li><a class="nav-link" href="../blog.html">Blog</a></li>
+                <li class="nav-item-dropdown">
+                    <span class="nav-link active">Interactive Tools ▼</span>
+                    <div class="dropdown-menu-custom">
+                        <a href="self-reflection.html" class="dropdown-item-custom"><span>📋</span> Self-Reflection Tool</a>
+                        <a href="trigger-tracker.html" class="dropdown-item-custom"><span>⚡</span> Trigger Tracker</a>
+                        <a href="craving-tracker.html" class="dropdown-item-custom"><span>📈</span> Craving Log</a>
+                        <a href="recovery-journal.html" class="dropdown-item-custom"><span>📖</span> Recovery Journal</a>
+                    </div>
+                </li>
+                <li><a class="nav-link" href="../music.html">Music & Recovery</a></li>
+                <li><a class="nav-link" href="../contact.html">Support</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="search-trigger-btn" id="globalSearchTrigger">🔍 <span>Search...</span></button>
+                <button class="theme-toggle-btn" id="themeToggleBtn">☀️</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-padding" style="background: radial-gradient(circle at 50% 20%, rgba(244, 63, 94, 0.15), transparent 70%);">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <span class="card-badge" style="position:static; display:inline-block; margin-bottom:1rem; color:var(--rose);">Interactive Tracker</span>
+                <h1>📈 Craving Tracker & Visual Trends</h1>
+                <p style="font-size:1.15rem; color:var(--text-secondary); margin-top:0.75rem;">Log craving intensity, emotional triggers, and replacement actions to observe your urge frequency drop over time.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container" style="max-width: 900px;">
+            
+            <!-- Form to log a craving -->
+            <form id="cravingTrackerForm" class="custom-form" style="margin-bottom: 3rem;">
+                <h3 style="margin-bottom: 1.5rem; text-align:center;">Log a Craving Incident</h3>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.25rem;">
+                    <div class="form-group">
+                        <label for="cravingCategory">Addiction Category:</label>
+                        <select id="cravingCategory" class="form-control-custom" style="width:100%;" required>
+                            <option value="Alcohol">Alcohol</option>
+                            <option value="Gaming">Gaming</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Substance">Substances</option>
+                            <option value="Pornography">Pornography / Sexual Content</option>
+                            <option value="Smartphone">Smartphone / Internet</option>
+                            <option value="Gambling">Gambling</option>
+                            <option value="Shopping">Shopping</option>
+                            <option value="Food">Food / Compulsive Eating</option>
+                            <option value="Other">Other Behavior</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cravingTrigger">Primary Trigger:</label>
+                        <input type="text" id="cravingTrigger" class="form-control-custom" style="width:100%;" placeholder="e.g. Work stress, boredom" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cravingIntensitySlider">
+                        Craving Intensity (1–10): <span id="cravingIntensityReadout" style="color:var(--rose); font-weight:700;">5/10</span>
+                    </label>
+                    <input type="range" id="cravingIntensitySlider" min="1" max="10" value="5" style="width:100%; accent-color:var(--rose);">
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.25rem;">
+                    <div class="form-group">
+                        <label for="cravingFeeling">What were you feeling?</label>
+                        <input type="text" id="cravingFeeling" class="form-control-custom" style="width:100%;" placeholder="e.g. Anxious, lonely, tired" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cravingAction">What did you do instead?</label>
+                        <input type="text" id="cravingAction" class="form-control-custom" style="width:100%;" placeholder="e.g. Went for a walk, called friend" required>
+                    </div>
+                </div>
+
+                <div class="form-group" style="display:flex; align-items:center; gap:0.5rem;">
+                    <input type="checkbox" id="cravingPassedCheck" checked style="accent-color:var(--primary); width:18px; height:18px;">
+                    <label for="cravingPassedCheck" style="margin:0; cursor:pointer;">The urge naturally passed without indulging</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%;">Record Craving Entry</button>
+            </form>
+
+            <!-- Visual Trend Chart -->
+            <div class="tool-container">
+                <h3>📊 Craving Intensity Visual Trends (Last 7 Logs)</h3>
+                <p style="color:var(--text-muted); font-size:0.9rem;">Visualizing how craving surges peak and subside.</p>
+
+                <div class="craving-bar-chart" id="cravingChartContainer">
+                    <!-- Rendered by JS -->
+                </div>
+            </div>
+
+            <!-- History List -->
+            <div style="margin-top: 3rem;">
+                <h3 style="margin-bottom: 1.25rem;">Recent Log Entries</h3>
+                <div id="cravingHistoryList">
+                    <!-- Rendered by JS -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 HopeRecovery Addiction Awareness & Education Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

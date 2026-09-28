@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Recovery Journal | HopeRecovery</title>
+    <meta name="description" content="A secure, private local-storage daily reflection journal to record mood, triggers, replacement activities, and personal victories.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="helpline-banner">
+        <span>🆘 Need Urgent Help or Someone to Talk To? 24/7 Free & Confidential Support</span>
+        <a href="tel:18006624357" class="helpline-btn">📞 Call 1-800-662-4357 (SAMHSA)</a>
+    </div>
+
+    <nav class="navbar-custom">
+        <div class="container nav-container">
+            <a class="navbar-brand" href="../index.html">
+                <span class="brand-icon">🌱</span>
+                <span>HopeRecovery</span>
+            </a>
+            <button class="mobile-nav-toggle" id="mobileNavToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item-dropdown">
+                    <span class="nav-link">Addictions ▼</span>
+                    <div class="dropdown-menu-custom" id="addictionsDropdownMenu"></div>
+                </li>
+                <li><a class="nav-link" href="../understanding-addiction.html">Understanding Addiction</a></li>
+                <li><a class="nav-link" href="../recovery.html">Recovery</a></li>
+                <li><a class="nav-link" href="../blog.html">Blog</a></li>
+                <li class="nav-item-dropdown">
+                    <span class="nav-link active">Interactive Tools ▼</span>
+                    <div class="dropdown-menu-custom">
+                        <a href="self-reflection.html" class="dropdown-item-custom"><span>📋</span> Self-Reflection Tool</a>
+                        <a href="trigger-tracker.html" class="dropdown-item-custom"><span>⚡</span> Trigger Tracker</a>
+                        <a href="craving-tracker.html" class="dropdown-item-custom"><span>📈</span> Craving Log</a>
+                        <a href="recovery-journal.html" class="dropdown-item-custom"><span>📖</span> Recovery Journal</a>
+                    </div>
+                </li>
+                <li><a class="nav-link" href="../music.html">Music & Recovery</a></li>
+                <li><a class="nav-link" href="../contact.html">Support</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="search-trigger-btn" id="globalSearchTrigger">🔍 <span>Search...</span></button>
+                <button class="theme-toggle-btn" id="themeToggleBtn">☀️</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-padding" style="background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.15), transparent 70%);">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <span class="card-badge" style="position:static; display:inline-block; margin-bottom:1rem;">Private Journal</span>
+                <h1>📖 Private Recovery Journal</h1>
+                <p style="font-size:1.15rem; color:var(--text-secondary); margin-top:0.75rem;">Log your daily mood, trigger reflections, replacement actions, and victories. All entries are stored locally on your browser.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container" style="max-width: 850px;">
+            
+            <form id="recoveryJournalForm" class="custom-form" style="margin-bottom: 3rem;">
+                <h3 style="margin-bottom: 1.5rem; text-align:center;">Today's Reflection Entry</h3>
+
+                <div class="form-group">
+                    <label for="journalMood">Today I felt:</label>
+                    <select id="journalMood" class="form-control-custom" style="width:100%; font-size:1.05rem;" required>
+                        <option value="🙂 Good & Steady">🙂 Good & Steady</option>
+                        <option value="😌 Calm & Grounded">😌 Calm & Grounded</option>
+                        <option value="😔 Sad or Low Energy">😔 Sad or Low Energy</option>
+                        <option value="😰 Anxious or Restless">😰 Anxious or Restless</option>
+                        <option value="😡 Frustrated or Angry">😡 Frustrated or Angry</option>
+                        <option value="😴 Exhausted">😴 Exhausted</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="journalTrigger">My biggest trigger or challenge today:</label>
+                    <input type="text" id="journalTrigger" class="form-control-custom" style="width:100%;" placeholder="e.g. Work deadline, evening boredom">
+                </div>
+
+                <div class="form-group">
+                    <label for="journalCoping">What did I do instead of indulging the urge?</label>
+                    <textarea id="journalCoping" class="form-control-custom" placeholder="e.g. Went for a run, called my sponsor, did deep breathing..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="journalProud">One thing I am proud of today:</label>
+                    <input type="text" id="journalProud" class="form-control-custom" style="width:100%;" placeholder="e.g. I stayed clean for another day!" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%;">Save Reflection Entry</button>
+            </form>
+
+            <div class="tool-container">
+                <h3 style="margin-bottom: 1.5rem;">📖 Saved Journal Entries (Local Storage)</h3>
+                <div id="journalHistoryContainer">
+                    <!-- Rendered by JS -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 HopeRecovery Addiction Awareness & Education Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

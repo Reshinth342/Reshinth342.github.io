@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Addiction & Screen Balance | HopeRecovery</title>
+    <meta name="description" content="WHO Gaming Disorder criteria, dopamine reward loops, microtransactions, sleep health, and digital balance strategies.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="helpline-banner">
+        <span>🆘 Need Urgent Help or Someone to Talk To? 24/7 Free & Confidential Support</span>
+        <a href="tel:18006624357" class="helpline-btn">📞 Call 1-800-662-4357 (SAMHSA)</a>
+    </div>
+
+    <nav class="navbar-custom">
+        <div class="container nav-container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-icon">🌱</span>
+                <span>HopeRecovery</span>
+            </a>
+            <button class="mobile-nav-toggle" id="mobileNavToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item-dropdown">
+                    <span class="nav-link active">Addictions ▼</span>
+                    <div class="dropdown-menu-custom" id="addictionsDropdownMenu"></div>
+                </li>
+                <li><a class="nav-link" href="understanding-addiction.html">Understanding Addiction</a></li>
+                <li><a class="nav-link" href="recovery.html">Recovery</a></li>
+                <li><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item-dropdown">
+                    <span class="nav-link">Interactive Tools ▼</span>
+                    <div class="dropdown-menu-custom">
+                        <a href="tools/self-reflection.html" class="dropdown-item-custom"><span>📋</span> Self-Reflection Tool</a>
+                        <a href="tools/trigger-tracker.html" class="dropdown-item-custom"><span>⚡</span> Trigger Tracker</a>
+                        <a href="tools/craving-tracker.html" class="dropdown-item-custom"><span>📈</span> Craving Log</a>
+                        <a href="tools/recovery-journal.html" class="dropdown-item-custom"><span>📖</span> Recovery Journal</a>
+                    </div>
+                </li>
+                <li><a class="nav-link" href="music.html">Music & Recovery</a></li>
+                <li><a class="nav-link" href="contact.html">Support</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="search-trigger-btn" id="globalSearchTrigger">🔍 <span>Search...</span></button>
+                <button class="theme-toggle-btn" id="themeToggleBtn">☀️</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-padding" style="background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.15), transparent 70%);">
+        <div class="container">
+            <div class="hero-grid">
+                <div>
+                    <span class="card-badge" style="position:static; display:inline-block; margin-bottom:1rem;">Behavioral Category</span>
+                    <h1>🎮 Gaming Addiction & Digital Balance</h1>
+                    <p style="font-size:1.15rem; color:var(--text-secondary); margin-top:0.75rem;">Understanding Gaming Disorder, dopamine reward loops, screen health, loot box microtransactions, and building digital boundaries.</p>
+                    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.5rem;">
+                        <a href="#video-guide" class="btn btn-primary">📺 Watch Video Guide</a>
+                        <a href="#grounding-exercise" class="btn btn-outline">⏱️ 3-Min Urge Surfing</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/gaming.png" alt="Gaming Addiction Visualizer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container" style="max-width: 950px;">
+            
+            <div class="glass-card" style="padding: 2rem; margin-bottom: 2.5rem;">
+                <h2>🧠 The Neuroscience of Gaming Reward Loops</h2>
+                <p style="color: var(--text-secondary); margin-top:0.75rem;">Modern game design utilizes <em>variable ratio reward schedules</em>—the exact mechanism found in slot machines. Battle passes, rank promotions, and loot boxes deliver unpredictable dopamine hits, conditioning the brain to seek continuous screen stimulation while real-world tasks feel under-stimulating.</p>
+            </div>
+
+            <h3 style="margin-bottom: 1.25rem;">📊 4 Stages of Gaming Overuse</h3>
+            <div class="stepper-container">
+                <div class="stepper-card">
+                    <div class="stepper-num">1</div>
+                    <h4>Recreational Fun</h4>
+                    <p style="font-size:0.88rem; color:var(--text-secondary);">Playing for leisure without interfering with school or work.</p>
+                </div>
+                <div class="stepper-card">
+                    <div class="stepper-num">2</div>
+                    <h4>Stress Escape</h4>
+                    <p style="font-size:0.88rem; color:var(--text-secondary);">Using gaming to avoid real-world problems or negative feelings.</p>
+                </div>
+                <div class="stepper-card">
+                    <div class="stepper-num">3</div>
+                    <h4>Sleep Disruption</h4>
+                    <p style="font-size:0.88rem; color:var(--text-secondary);">Late-night gaming sessions leading to chronic fatigue.</p>
+                </div>
+                <div class="stepper-card">
+                    <div class="stepper-num">4</div>
+                    <h4>Gaming Disorder</h4>
+                    <p style="font-size:0.88rem; color:var(--text-secondary);">Gaming takes priority over personal hygiene, school, and relationships.</p>
+                </div>
+            </div>
+
+            <div class="checklist-card">
+                <h3>📋 Interactive Gaming Warning Signs Checklist</h3>
+                <div class="checklist-item">
+                    <input type="checkbox" id="gam_chk1">
+                    <label for="gam_chk1">Preoccupation with gaming (thinking about previous or next gaming session).</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="gam_chk2">
+                    <label for="gam_chk2">Feeling restless, irritable, or moody when trying to cut back on gaming.</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" id="gam_chk3">
+                    <label for="gam_chk3">Lying to family or friends regarding the number of hours spent gaming.</label>
+                </div>
+            </div>
+
+            <div id="grounding-exercise" class="grounding-box">
+                <h3>⏱️ Interactive 3-Minute Urge Surfing Tool</h3>
+                <p style="color:var(--text-secondary); font-size:0.95rem;">Feeling an acute craving surge? Cravings naturally peak and subside within 3 minutes when you redirect your nervous system.</p>
+                
+                <div class="timer-readout" id="groundingTimerReadout">3:00</div>
+                <p id="groundingStatusMsg" style="font-size:0.9rem; color:var(--teal); margin-bottom:1rem;">Click below to start deep breathing exercise...</p>
+                <button id="startGroundingTimerBtn" class="btn btn-primary">▶️ Start 3-Minute Grounding</button>
+            </div>
+
+            <div id="video-guide" class="glass-card" style="padding: 2rem; margin-top: 3rem; border-color: var(--primary);">
+                <span class="card-badge" style="position:static; display:inline-block; margin-bottom:0.75rem;">Educational Video Guide</span>
+                <h3>📺 Video Guide: Managing Gaming Addiction</h3>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube-nocookie.com/embed/EHmC2D0_Hdg" title="Gaming Addiction Video Guide" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem; text-align: center;">
+                <a href="index.html" class="btn btn-outline">← Back to Homepage</a>
+                <a href="tools/craving-tracker.html" class="btn btn-primary">Open Craving Log →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 HopeRecovery Addiction Awareness & Education Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
